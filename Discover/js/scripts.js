@@ -1,5 +1,4 @@
-let score = 80;
-function getScore() {
+function getScore(score) {
   let scoreA = score >= 90 && score <= 100;
   let scoreB = score >= 80 && score <= 89;
   let scoreC = score >= 70 && score <= 79;
@@ -22,7 +21,9 @@ function getScore() {
     scoreFinal = "Nota Inválida";
   }
 
-  return scoreFinal
+  return scoreFinal;
 }
 
-getScore(101)
+console.log(getScore(80));
+console.log(getScore(1));
+console.log(getScore(80));
